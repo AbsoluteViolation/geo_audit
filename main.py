@@ -15,7 +15,7 @@ def safe_check(output, fn, default=False, err_label=""):
         output["recomandations"] = (output.get("recomandations","") + f", ERROR({err_label}): {e}").strip()
         return default
     
-articles = load_articles("data/articles_test.json")
+articles = load_articles("data/articles.json")
 
 outputs = []
 for article in articles:
