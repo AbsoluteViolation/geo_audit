@@ -1,0 +1,51 @@
+{
+    "articles": [
+        {
+            "url": "https://example.com/valid-article",
+            "title": "Proteín: čo to je",
+            "meta_description": "Proteín je základná živina potrebná pre rast svalov a regeneráciu organizmu.",
+            "content_html": "<article><header class=\"entry-header\"><h1>Proteín</h1></header><div class=\"entry-content\"><p>Proteín je základná živina.</p><ul><li>Fakt 1</li></ul></div></article>"
+        },
+        {
+            "url": "https://example.com/missing-meta",
+            "title": "Chýbajúci meta_description",
+            "content_html": "<article><div class=\"entry-content\"><p>Obsah článku bez meta.</p></div></article>"
+        },
+        {
+            "url": "https://example.com/empty-html",
+            "title": "Prázdny content_html",
+            "meta_description": "Test meta description",
+            "content_html": ""
+        },
+        {
+            "url": "https://example.com/no-article-tag",
+            "title": "Bez article tagu",
+            "meta_description": "Test meta description",
+            "content_html": "<div><p>Tento HTML nemá article tag.</p></div>"
+        },
+        {
+            "url": "https://example.com/no-header",
+            "title": "Bez header",
+            "meta_description": "Test meta description",
+            "content_html": "<article><div class=\"entry-content\"><p>Obsah bez header.</p></div></article>"
+        },
+        {
+            "url": "https://example.com/broken-html",
+            "title": "Poškodený HTML",
+            "meta_description": "Test meta description",
+            "content_html": "<article><div><p>Neuzavretý tag"
+        },
+        {
+            "url": "https://example.com/null-values",
+            "title": null,
+            "meta_description": null,
+            "content_html": null
+        },
+        {
+            "url": "https://example.com/no-lists-no-tables",
+            "title": "Bez listov a tabuliek",
+            "meta_description": "Meta description existuje a má správnu dĺžku pre testovanie systému.",
+            "content_html": "<article><header class=\"entry-header\"><h1>Názov</h1></header><div class=\"entry-content\"><p>Len text bez listov.</p></div></article>"
+        }
+    ]
+}

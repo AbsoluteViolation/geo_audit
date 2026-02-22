@@ -1,0 +1,77 @@
+<!doctype html>
+                        <html lang="sk">
+                        <head>
+                            <meta charset="utf-8">
+                            <meta name="viewport" content="width=device-width, initial-scale=1">
+                            <title>GEO Audit Report</title>
+                            <style>
+                                body {
+                                    font-family: Arial, sans-serif;
+                                    background: #ffffff;
+                                    margin: 24px;
+                                    }
+                                    .page {
+                                    margin: 40px auto;
+                                    padding: 20px 40px 60px;
+                                    background: #fff;
+                                    }
+                                    .logo {
+                                    height: 100px;
+                                    width: auto;
+                                    display: flex;
+                                    margin-bottom: 40px;
+                                    }
+                                    .text {
+                                    font-size: 14px;
+                                    line-height: 1.6;
+                                    white-space: pre-line;
+                                    }
+                                    h1 { margin: 0 0 12px; }
+                                    table { border-collapse: collapse; width: 100%; }
+                                    th, td { border: 1px solid #ddd; padding: 8px; vertical-align: top; }
+                                    th { background: #f5f5f5; position: sticky; top: 0; z-index: 1; }
+                                    tr:nth-child(even) { background: #fafafa; }
+                                    .ok { background: #e9f7ef; color: #1e7e34; font-weight: 600; text-align: center; }
+                                    .no { background: #fdecea; color: #b02a37; font-weight: 600; text-align: center; }
+                                    .score { font-weight: 700; text-align: center; }
+                                    a { color: #0b66c3; text-decoration: none; }
+                                    a:hover { text-decoration: underline; }
+                                    .wrap { word-break: break-word; }
+                                    .score-high {
+                                    background-color: #e6f4ea;
+                                    color: #1e7e34;
+                                    font-weight: bold;
+                                    text-align: center;
+                                    }
+                                    .score-medium {
+                                    background-color: #fff4e5;
+                                    color: #b26a00;
+                                    font-weight: bold;
+                                    text-align: center;
+                                    }
+                                    .score-low {
+                                    background-color: #fdecea;
+                                    color: #b02a37;
+                                    font-weight: bold;
+                                    text-align: center;
+                                    }
+                            </style>
+                        </head>
+                        <body>
+                            <div class="page">
+                                <img class="logo" src="../pictures/gymbeam-logo.png" alt="GymBeam" />
+
+                            <div class="text">
+                            <h1>GEO Audit Report</h1>
+                            <div style="overflow:auto;">
+                            <table>
+                            <thead>
+                            <tr><th>url</th><th>title</th><th>score</th><th>direct_answer</th><th>definiton</th><th>headings</th><th>facts</th><th>sources</th><th>faq</th><th>lists</th><th>tables</th><th>length_ok</th><th>meta_ok</th><th>recomandations</th></tr></thead><tbody><tr><td class="wrap"><a href="https://example.com/valid-article" target="_blank" rel="noopener noreferrer">https://example.com/valid-article</a></td><td class="wrap">Proteín: čo to je</td><td class="score-low">3</td><td>1</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>Pridajte nádpisy, doplňte číselné údaje, doplňte citácie, doplňte sekciu FAQ, pridajte tabuľku, pridajte zopár viet, pridajte meta popis.</td></tr><tr><td class="wrap"><a href="https://example.com/missing-meta" target="_blank" rel="noopener noreferrer">https://example.com/missing-meta</a></td><td class="wrap">Chýbajúci meta_description</td><td class="score-low">1</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>Určte jasnú definíciu hlavného pojmu, pridajte nádpisy, doplňte číselné údaje, doplňte citácie, doplňte sekciu FAQ, doplňte odrážkový alebo číselný zoznam, pridajte tabuľku, pridajte zopár viet, pridajte meta popis.</td></tr><tr><td class="wrap"><a href="https://example.com/empty-html" target="_blank" rel="noopener noreferrer">https://example.com/empty-html</a></td><td class="wrap">Prázdny content_html</td><td class="score-low">0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td> Na začiatok článku pridať konkrétne tvrdenie, určte jasnú definíciu hlavného pojmu, pridajte nádpisy, doplňte číselné údaje, doplňte citácie, doplňte sekciu FAQ, doplňte odrážkový alebo číselný zoznam, pridajte tabuľku, pridajte zopár viet, pridajte meta popis</td></tr><tr><td class="wrap"><a href="https://example.com/no-article-tag" target="_blank" rel="noopener noreferrer">https://example.com/no-article-tag</a></td><td class="wrap">Bez article tagu</td><td class="score-low">0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td> Na začiatok článku pridať konkrétne tvrdenie, určte jasnú definíciu hlavného pojmu, pridajte nádpisy, doplňte číselné údaje, doplňte citácie, doplňte sekciu FAQ, doplňte odrážkový alebo číselný zoznam, pridajte tabuľku, pridajte zopár viet, pridajte meta popis</td></tr><tr><td class="wrap"><a href="https://example.com/no-header" target="_blank" rel="noopener noreferrer">https://example.com/no-header</a></td><td class="wrap">Bez header</td><td class="score-low">1</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>Určte jasnú definíciu hlavného pojmu, pridajte nádpisy, doplňte číselné údaje, doplňte citácie, doplňte sekciu FAQ, doplňte odrážkový alebo číselný zoznam, pridajte tabuľku, pridajte zopár viet, pridajte meta popis.</td></tr><tr><td class="wrap"><a href="https://example.com/broken-html" target="_blank" rel="noopener noreferrer">https://example.com/broken-html</a></td><td class="wrap">Poškodený HTML</td><td class="score-low">1</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>Určte jasnú definíciu hlavného pojmu, pridajte nádpisy, doplňte číselné údaje, doplňte citácie, doplňte sekciu FAQ, doplňte odrážkový alebo číselný zoznam, pridajte tabuľku, pridajte zopár viet, pridajte meta popis.</td></tr><tr><td class="wrap"><a href="https://example.com/null-values" target="_blank" rel="noopener noreferrer">https://example.com/null-values</a></td><td class="wrap">None</td><td class="score-low">0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td> Na začiatok článku pridať konkrétne tvrdenie, určte jasnú definíciu hlavného pojmu, pridajte nádpisy, doplňte číselné údaje, doplňte citácie, doplňte sekciu FAQ, doplňte odrážkový alebo číselný zoznam, pridajte tabuľku, pridajte zopár viet, pridajte meta popis</td></tr><tr><td class="wrap"><a href="https://example.com/no-lists-no-tables" target="_blank" rel="noopener noreferrer">https://example.com/no-lists-no-tables</a></td><td class="wrap">Bez listov a tabuliek</td><td class="score-low">1</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>Určte jasnú definíciu hlavného pojmu, pridajte nádpisy, doplňte číselné údaje, doplňte citácie, doplňte sekciu FAQ, doplňte odrážkový alebo číselný zoznam, pridajte tabuľku, pridajte zopár viet, pridajte meta popis.</td></tr></tbody>
+                        </table>
+                        </div>
+                        <div>
+                     <h2>Priemerné skóre článkov z tabuľky je <b>0.88</b> bodov </h2>
+                        </div>
+                        </div>
+                        </body>
+                        </html>
