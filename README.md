@@ -1,4 +1,4 @@
-# GEO Audit Tool for GymBeam Blog
+# GEO Audit Tool for GymBeam
 
 ## Overview
 
